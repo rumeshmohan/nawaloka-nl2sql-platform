@@ -57,10 +57,15 @@ The pipeline has **four specialist agents** coordinated by a central orchestrato
 ## Project Structure
 
 ```
-miniproject04/
+nawaloka-nl2sql-platform/
 ├── config/
 │   ├── model.yaml          # LLM provider and model configuration
 │   └── params.yaml         # Runtime parameters (temperature, provider, paths)
+├── data/
+│   └── medicore_data.sql   # Database dump for seeding (ignored in git)
+├── report/
+│   ├── engineering_report.md # Technical documentation
+│   └── Nawaloka-Hospital-NL2SQL-Platform Engineering Report.pdf
 ├── scripts/
 │   ├── download_traces.py  # Downloads LangFuse traces to traces/
 │   └── seed_supabase.py    # Seeds the Supabase database from medicore_data.sql
@@ -84,9 +89,13 @@ miniproject04/
 ├── tests/
 │   └── test_validator.py         # Unit tests for SQL Validator
 ├── traces/                       # LangFuse trace samples (3 representative queries)
+├── .env example                  # Template for environment variables
+├── .gitignore                    # Git tracking ignore rules
+├── .python-version               # Python version specification
 ├── docker-compose.yml            # Local PostgreSQL via Docker
-├── pyproject.toml
-└── .env example
+├── Makefile                      # CLI commands for project tasks
+├── pyproject.toml                # Project metadata and dependencies
+└── uv.lock                       # Deterministic dependency lockfile
 ```
 
 ---
@@ -103,8 +112,8 @@ miniproject04/
 ### 1. Clone and install dependencies
 
 ```bash
-git clone <repo-url>
-cd miniproject04
+git clone https://github.com/rumeshmohan/nawaloka-nl2sql-platform.git
+cd nawaloka-nl2sql-platform
 uv sync
 ```
 

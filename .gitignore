@@ -6,24 +6,10 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-.Python
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-.eggs/
-wheels/
-*.so
-pip-log.txt
 
 # Virtual Environments
 .venv/
 venv/
-env/
-ENV/
 
 # uv
 .uv/
@@ -43,25 +29,16 @@ pgdata/
 # Docker
 docker-compose.override.yml
 
-# Data files — keep medicore_data.sql, ignore exported outputs
-data/*.csv
+# Data files — ignore large database dumps and exported outputs
 data/*.sql
+data/*.csv
 data/*.json
 data/*.parquet
-!data/.gitkeep
 
-# Submission artifacts
-*.pptx
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
-# IDEs
+# IDEs & OS Files
 .vscode/
 .idea/
 *.swp
-*.swo
 .DS_Store
 
 # Testing & Coverage
