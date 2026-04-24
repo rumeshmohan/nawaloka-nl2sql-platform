@@ -1,0 +1,49 @@
+./
+├── .env example [548.0 B]
+├── .gitignore [780.0 B]
+├── .python-version [5.0 B]
+├── Makefile [6.0 KB]
+├── README.md [15.5 KB]
+├── config/
+│   ├── model.yaml [956.0 B]
+│   └── params.yaml [364.0 B]
+├── data/
+│   └── medicore_data.sql [56.0 MB] (LARGE FILE)
+├── docker-compose.yml [336.0 B]
+├── pyproject.toml [518.0 B]
+├── report/
+│   ├── Nawaloka-Hospital-NL2SQL-Platform Engineering Report.pdf [1.7 MB] (LARGE FILE)
+│   └── engineering_report.md [12.9 KB]
+├── scripts/
+│   ├── download_traces.py [4.2 KB]
+│   └── seed_supabase.py [1.5 KB]
+├── src/
+│   ├── __init__.py [0.0 B]
+│   ├── agents/
+│   │   ├── __init__.py [0.0 B]
+│   │   ├── fallback_agent.py [1.9 KB]
+│   │   ├── interpreter_agent.py [4.0 KB]
+│   │   ├── router_agent.py [2.9 KB]
+│   │   └── sql_agent.py [3.0 KB]
+│   ├── dashboard/
+│   │   ├── __init__.py [0.0 B]
+│   │   └── app.py [24.0 KB]
+│   ├── engine/
+│   │   ├── __init__.py [0.0 B]
+│   │   ├── db_client.py [3.8 KB]
+│   │   ├── orchestrator.py [4.2 KB]
+│   │   ├── prompt_builder.py [3.9 KB]
+│   │   └── sql_validator.py [2.8 KB]
+│   └── utils/
+│       ├── __init__.py [0.0 B]
+│       ├── config.py [2.7 KB]
+│       ├── llm_services.py [5.4 KB]
+│       └── observability.py [510.0 B]
+├── tests/
+│   ├── __init__.py [0.0 B]
+│   └── test_validator.py [1.2 KB]
+├── traces/
+│   ├── complex_trace.json [4.5 KB]
+│   ├── failed_trace.json [2.1 KB]
+│   └── simple_trace.json [2.0 KB]
+└── uv.lock [537.2 KB]

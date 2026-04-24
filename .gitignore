@@ -1,0 +1,75 @@
+# Environment & Secrets
+.env
+.env.*
+!.env example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+wheels/
+*.so
+pip-log.txt
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# uv
+.uv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# LangFuse cache
+langfuse_cache/
+
+# Database
+*.sql.bak
+pgdata/
+*.db
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+
+# Data files — keep medicore_data.sql, ignore exported outputs
+data/*.csv
+data/*.sql
+data/*.json
+data/*.parquet
+!data/.gitkeep
+
+# Submission artifacts
+*.pptx
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Logs
+*.log
+logs/
